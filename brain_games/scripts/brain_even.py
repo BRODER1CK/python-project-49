@@ -30,7 +30,7 @@ def even_game():
             else:
                 print("'no' is wrong answer ;(. Correct answer was 'yes'.")
                 return print(f"Let's try again, {name}!")
-        return print(f"Congratulations, {name}!")
+    return print(f"Congratulations, {name}!")
 
 
 def main():
