@@ -27,6 +27,7 @@ def even_game():
                 return print(f"Let's try again, {name}!")
             elif not even:
                 print("'yes' is wrong answer ;(. Correct answer was 'no'.")
+                return print(f"Let's try again, {name}!")
             else:
                 print("'no' is wrong answer ;(. Correct answer was 'yes'.")
                 return print(f"Let's try again, {name}!")
