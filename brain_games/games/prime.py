@@ -11,8 +11,8 @@ def game():
             prime = False
         else:
             prime = True
-    if prime is True:
-        result = "yes"
-    else:
-        result = "no"
+        if prime is True:
+            result = "yes"
+        else:
+            result = "no"
     return question, result
