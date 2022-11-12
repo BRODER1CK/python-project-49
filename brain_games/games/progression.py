@@ -6,7 +6,7 @@ TASK = "What number is missing in the progression?"
 
 def game():
     start = randint(0, 100)
-    stop = randint(stop, 1000)
+    stop = randint(start, 1000)
     step = randint(1, 5)
     length = randint(5, 10)
     nums_list = list(range(start, stop, step))[:length]
