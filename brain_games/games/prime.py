@@ -1,4 +1,5 @@
 from random import randint
+from math import sqrt
 
 
 TASK = 'Answer "yes" if given number is prime. Otherwise answer "no".'
@@ -6,7 +7,7 @@ TASK = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 def game():
     question = randint(2, 100)
-    for num in range(2, int(question / 2 + 1)):
+    for num in range(2, int(sqrt(question)) + 1):
         if question % num == 0:
             prime = False
         else:
