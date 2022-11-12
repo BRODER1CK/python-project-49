@@ -1,4 +1,4 @@
-from cli import welcome_user
+from brain_games.cli import welcome_user
 import prompt
 
 
@@ -10,7 +10,7 @@ def info(games):
         question, result = games.game()
         print(f"Question: {question}")
         answer = prompt.string("Your answer: ")
-        if answer == question:
+        if answer == str(result):
             print("Correct!")
         else:
             print(
