@@ -27,7 +27,9 @@ def brain_calc():
             print("Correct!")
             win_counter += 1
         else:
-            print(f"'{answer}' is wrong answer ;(. Correct answer was '{calculate}'")
+            print(
+                f"'{answer}' is wrong answer ;(. "
+                f"Correct answer was '{calculate}'.")
             return print(f"Let's try again, {name}!")
     return print(f"Congratulations, {name}!")
 

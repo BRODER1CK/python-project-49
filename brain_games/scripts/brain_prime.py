@@ -11,10 +11,10 @@ def brain_prime():
     while win_counter < 3:
         question = randint(2, 100)
         for num in range(2, int(question / 2 + 1)):
-           if question % num == 0:
-               prime = False
-           else:
-               prime = True
+            if question % num == 0:
+                prime = False
+            else:
+                prime = True
         if prime is True:
             result = "yes"
         else:
@@ -25,7 +25,9 @@ def brain_prime():
             print("Correct!")
             win_counter += 1
         else:
-            print(f"'{answer}' is wrong answer ;(. Correct answer was '{result}'")
+            print(
+                f"'{answer}' is wrong answer ;(. "
+                f"Correct answer was '{result}'.")
             return print(f"Let's try again, {name}!")
     return print(f"Congratulations, {name}!")
 

@@ -17,14 +17,16 @@ def brain_progression():
         random_index = randint(0, len(nums_list) - 1)
         result = nums_list[random_index]
         nums_list[random_index] = ".."
-        question = " ".join(map(str, (nums_list))) 
+        question = " ".join(map(str, (nums_list)))
         print(f"Question: {question}")
         answer = prompt.string("Your answer: ")
         if str(answer) == str(result):
             print("Correct!")
             win_counter += 1
         else:
-            print(f"'{answer}' is wrong answer ;(. Correct answer was '{result}'")
+            print(
+                f"'{answer}' is wrong answer ;(. "
+                f"Correct answer was '{result}'.")
             return print(f"Let's try again, {name}!")
     return print(f"Congratulations, {name}!")
 

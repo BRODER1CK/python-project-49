@@ -20,7 +20,9 @@ def brain_gcd():
             print("Correct!")
             win_counter += 1
         else:
-            print(f"'{answer}' is wrong answer ;(. Correct answer was '{result}'")
+            print(
+                f"'{answer}' is wrong answer ;(. "
+                f"Correct answer was '{result}'.")
             return print(f"Let's try again, {name}!")
     return print(f"Congratulations, {name}!")
 
