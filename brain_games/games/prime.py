@@ -5,7 +5,7 @@ TASK = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
 def game():
-    question = randint(2, 100)
+    question = randint(2, 50)
     for num in range(2, int(question / 2 + 1)):
         if question % num == 0:
             prime = False
