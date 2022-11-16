@@ -6,6 +6,7 @@ TASK = "Find the greatest common divisor of given numbers."
 
 
 def game():
+    "Takes two random nums and returned their GCD."
     num1 = randint(1, 100)
     num2 = randint(1, 100)
     question = f"{num1} {num2}"

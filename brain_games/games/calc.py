@@ -7,6 +7,7 @@ TASK = "What is the result of the expression?"
 
 
 def game():
+    """Takes two random numbers and operator, then return it."""
     operators = ["-", "+", "*"]
     num1 = randint(1, 100)
     num2 = randint(1, 100)

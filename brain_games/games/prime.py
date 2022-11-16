@@ -12,6 +12,7 @@ def is_prime(question):
 
 
 def game():
+    """Takes a random number and checks if it is prime."""
     question = randint(2, 100)
     if is_prime(question):
         result = "yes"
